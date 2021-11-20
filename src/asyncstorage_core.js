@@ -5,13 +5,13 @@
  */
 
 import { safeJsonParse, safeJsonStringify } from 'pouchdb-json'
-import { AsyncStorageStatic as AsyncStorage } from '@react-native-async-storage/async-storage'
+import AsyncStorage from '@react-native-async-storage/async-storage'
 
 
 let AsyncStorageRocksDB
 try {
   AsyncStorageRocksDB = require('react-native-async-storage-rocks').default
-} finally {
+} catch(e) {
   // Fall back to regular AsyncStorage
 }
 
