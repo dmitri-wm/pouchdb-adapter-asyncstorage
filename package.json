@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/stockulus/pouchdb-react-native#readme",
   "dependencies": {
+    "@react-native-async-storage/async-storage": "^1.15.11",
     "atob": "2.1.1",
     "blob-polyfill": "3.0.20180112",
     "btoa": "1.2.1",

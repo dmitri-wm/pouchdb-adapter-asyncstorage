@@ -4,8 +4,8 @@
  * Adapted from https://github.com/tradle/asyncstorage-down
  */
 
-import { AsyncStorage } from 'react-native'
 import { safeJsonParse, safeJsonStringify } from 'pouchdb-json'
+import { AsyncStorageStatic as AsyncStorage } from '@react-native-async-storage/async-storage'
 
 
 let AsyncStorageRocksDB
